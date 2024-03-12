@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\School-Modelowanie-Komputerowe\Lista_1\Spots_V2\main.cpp(14,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\School-Modelowanie-Komputerowe\Lista_1\Spots_V2\main.cpp(70,6): warning C4101: 'board': unreferenced local variable
+  Spots_v2.vcxproj -> C:\School-Modelowanie-Komputerowe\Lista_1\Spots_V2\x64\Debug\Spots_v2.exe

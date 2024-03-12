@@ -1,10 +1,12 @@
 #include <SFML/Window.hpp>
+#include <SFML/Graphics/Texture.hpp>
 #include <glad/glad.h>
 #include "ShaderProgram.h"
 #include "Board.h"
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
+#include <string>
 
 
 
@@ -15,7 +17,7 @@ int main() {
     contextSettings.minorVersion = 3;
     contextSettings.majorVersion = 3;
 
-    sf::Window window(sf::VideoMode(800, 800), "OpenGL", sf::Style::Default, contextSettings);
+    sf::Window window(sf::VideoMode(1000, 1000), "OpenGL", sf::Style::Default, contextSettings);
     window.setActive(true);
 
     gladLoadGL();
@@ -28,9 +30,11 @@ int main() {
     Board board(300, 300);
     board.Generate();
 
+    sf::Texture pic;
+    pic.create(window.getSize().x, window.getSize().y);
 
     //Clock
-    int steps = 1000;
+    int steps = 30000;
     sf::Clock clock;
     float last_step = 0.0f;
     float step_timing = 0.01f;
@@ -68,6 +72,14 @@ int main() {
                 //Write to File
                 if (file.is_open()) {
                     file << board.Density() << " ";	//pass board density into file
+                }
+                //grab screen shot every x steps
+                if (false) {          
+                    pic.update(window);
+                    std::string filename = "im_";
+                    filename += std::to_string(steps);
+                    filename += ".png";
+                    pic.copyToImage().saveToFile(filename);
                 }
                 steps--;
                 system("cls");
