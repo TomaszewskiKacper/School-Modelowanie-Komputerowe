@@ -1,2 +1,3 @@
 C:\School-Modelowanie-Komputerowe\Lista_1\Game of Life\x64\Debug\Game of life.exe
 C:\Users\Domowy\Documents\GitHub\School-Modelowanie-Komputerowe\Lista_1\Game of Life\x64\Debug\Game of life.exe
+C:\Users\Domowy\Documents\GitHub\School-Modelowanie-Komputerowe\Lista_2 (prob)\Game of Life\x64\Debug\Game of life.exe

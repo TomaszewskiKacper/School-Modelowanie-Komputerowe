@@ -39,15 +39,11 @@ Oś X : liczba iteracji (kroków)
 
 Grafy gęstości dla modelu 100x100
 
-![alt text](100x100_1.svg)
-![alt text](100x100_2.svg)
-![alt text](100x100_3.svg)
+![alt text](100x100.svg)
 
 Grafy gęstości dla modelu 300x300
 
-![alt text](300x300_1.png)
-![alt text](300x300_2.svg)
-![alt text](300x300_3.svg)
+![alt text](300x300.png)
 
 Porównując grafy do wcześniejszej animacji możemy zauważyć podobieństwo,
 w pierwszym kroku, jako że wartości początkowe pól są losowe, gęstość komórek żywych w porównaniu do całkowitej liczby pól wynosi w przybliżeniu 50%,

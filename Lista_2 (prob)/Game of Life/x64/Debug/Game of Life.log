@@ -1,10 +1,5 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: Katalog pośredni (x64\Debug\) zawiera pliki udostępnione z innego projektu (Game of life 3d.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
   Board.cpp
-C:\Users\Domowy\Documents\GitHub\School-Modelowanie-Komputerowe\Lista_1\Game of Life\Board.cpp(9,1): warning C4267: "inicjowanie": konwersja z "size_t" do "const int", możliwa utrata danych
-C:\Users\Domowy\Documents\GitHub\School-Modelowanie-Komputerowe\Lista_1\Game of Life\Board.cpp(21,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-  Cell.cpp
-  main.cpp
-  ShaderProgram.cpp
-  Generowanie kodu...
-  glad.c
-  Game of Life.vcxproj -> C:\Users\Domowy\Documents\GitHub\School-Modelowanie-Komputerowe\Lista_1\Game of Life\x64\Debug\Game of life.exe
+C:\Users\Domowy\Documents\GitHub\School-Modelowanie-Komputerowe\Lista_2 (prob)\Game of Life\Board.cpp(9,1): warning C4267: "inicjowanie": konwersja z "size_t" do "const int", możliwa utrata danych
+C:\Users\Domowy\Documents\GitHub\School-Modelowanie-Komputerowe\Lista_2 (prob)\Game of Life\Board.cpp(21,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  Game of Life.vcxproj -> C:\Users\Domowy\Documents\GitHub\School-Modelowanie-Komputerowe\Lista_2 (prob)\Game of Life\x64\Debug\Game of life.exe

@@ -54,7 +54,7 @@ void Board::Next_step()
 
 
 			//update based on number of alive neighbours
-			if (neighbours_alive < 4 || neighbours_alive == 5)	//cell dies with 1,2,3,5 alive neighbours
+			if (neighbours_alive < 4 || neighbours_alive == 5)	//cell dies with 0,1,2,3,5 alive neighbours
 				m_new_board[Coords_to_Index(x, y)] = false;
 			else
 				m_new_board[Coords_to_Index(x, y)] = true;	

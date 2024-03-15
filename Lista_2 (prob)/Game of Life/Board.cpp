@@ -57,14 +57,15 @@ void Board::Next_step()
 			//update based on number of alive neighbours
 			if (neighbours_alive > 3 || neighbours_alive < 2)	//cell dies with less than 2 or more than 3 alive neighbours
 				m_new_board[Coords_to_Index(x, y)] = false;
-			else
+			else if(neighbours_alive == 3)
 				m_new_board[Coords_to_Index(x, y)] = true;	//cell is born with 3 alive neighbours
-															//with 2 alive neighbours cell doesn't change
+															
 		}
 	}
 	//override old alive state
 	for (size_t i = 0; i < m_size_x * m_size_y; i++)
 		m_board[i].Set_Alive(m_new_board[i]);
+	delete(m_new_board);
 
 }
 

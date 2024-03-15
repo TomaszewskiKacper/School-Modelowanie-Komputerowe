@@ -23,7 +23,7 @@ int main() {
     ShaderProgram shader;
 
     //Initialize Board
-    Board board(100, 100);
+    Board board(200, 200);
     board.Generate();
 
 
@@ -50,11 +50,11 @@ int main() {
 
         //timing
         float dt = clock.restart().asSeconds();
-        std::cout << 1.0f / dt << " FPS" << std::endl;
+        //std::cout << 1.0f / dt << " FPS" << std::endl;
         last_step += dt;
-        if (last_step > 1.0f) { //next step every x seconds
+        if (last_step > 0.10f) { //next step every x seconds
             board.Next_step();
-            last_step -= 1.0f;
+            last_step -= 0.10f;
         }
 
         window.display();

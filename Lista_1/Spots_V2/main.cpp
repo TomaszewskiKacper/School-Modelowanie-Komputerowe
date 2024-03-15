@@ -3,9 +3,9 @@
 #include <fstream>
 #include <cstdlib>
 
-const int m_x = 100;
-const int m_y = 100;
-const int m_steps = 5000;
+const int m_x = 300;
+const int m_y = 300;
+const int m_steps = 15000;
 int board[m_x][m_y];
 
 
@@ -74,7 +74,7 @@ int main() {
 	Generate();
 
 	//Open and write to file
-	std::ofstream file("../Spots_graphing/Spots_Density.txt");
+	std::ofstream file("../Spots_graphing/Spots_Density_300x300_1.txt");
 
 	for (int s = 0; s < m_steps; s++) {
 		//system("cls");
